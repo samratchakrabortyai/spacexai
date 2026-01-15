@@ -1,53 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work - SpacexAI Research Cohort</title>
+  <title>Our Work - AIxSpace Research Cohort</title>
+  <meta name="description" content="Research publications and ongoing projects">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Same head as before -->
 </head>
 <body>
-  <!-- Same nav, starfield, loader -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-    <h1 class="text-6xl md:text-8xl font-bold gradient-text mb-8" data-aos="fade-up">Our Research & Publications</h1>
-    <p class="text-2xl md:text-4xl text-gray-300" data-aos="fade-up" data-aos-delay="300">Pushing the boundaries of AI in space exploration</p>
-  </section>
 
-  <section class="py-32 px-6 max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-12">
-      <!-- GLOC 2026 Card -->
-      <a href="work/gloc26.html" class="glass rounded-3xl p-12 tilt-card group hover:shadow-2xl hover:shadow-green-500/20 transition">
-        <div class="text-8xl mb-8">🌍</div>
-        <h3 class="text-4xl font-bold mb-4">GLOC 2026</h3>
-        <p class="text-xl text-gray-400 mb-4">Global Space Conference on Climate Change</p>
-        <p class="mb-8">Our submissions for the upcoming conference</p>
-        <span class="inline-block px-6 py-3 bg-green-500/20 text-green-400 rounded-full font-bold">11 Abstracts</span>
+<!-- Background Effects -->
+<div class="stars"></div>
+<div class="nebula"></div>
+
+<!-- Navigation -->
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">AIxSpace 🚀</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="work.html">Our Work</a>
+      <a href="join.html">Join Cohort</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" style="min-height: 60vh;">
+  <div class="hero-content">
+    <h1 class="mega-title gradient-text">Our Research</h1>
+    <div class="gradient-underline"></div>
+    <p class="tagline">1 Published · 11 Accepted · Pushing the boundaries of AI in space</p>
+  </div>
+</section>
+
+<!-- Work Grid -->
+<section class="section">
+  <div class="container">
+    <div class="work-grid">
+      
+      <!-- GLOC 2026 -->
+      <a href="work/gloc26.html" class="glass-card work-card">
+        <div class="work-icon">🌍</div>
+        <h3>GLOC 2026</h3>
+        <p>Global Space Conference on Climate Change</p>
+        <p style="margin-bottom: 1.5rem;">AI-Driven Climate-Resilient Space Infrastructure</p>
+        <span class="work-badge green">11 Abstracts Accepted</span>
       </a>
 
-      <!-- IAC 2026 Card -->
-      <a href="work/iac26.html" class="glass rounded-3xl p-12 tilt-card group">
-        <div class="text-8xl mb-8">🚀</div>
-        <h3 class="text-4xl font-bold mb-4">IAC 2026</h3>
-        <p class="text-xl text-gray-400 mb-4">International Astronautical Congress</p>
-        <p class="mb-8">Preparing groundbreaking research</p>
-        <span class="inline-block px-6 py-3 bg-purple-500/20 text-purple-400 rounded-full font-bold">Coming Soon</span>
+      <!-- IAC 2026 -->
+      <a href="work/iac26.html" class="glass-card work-card">
+        <div class="work-icon">🚀</div>
+        <h3>IAC 2026</h3>
+        <p>International Astronautical Congress</p>
+        <p style="margin-bottom: 1.5rem;">Preparing groundbreaking research</p>
+        <span class="work-badge purple">Coming Soon</span>
       </a>
 
-      <!-- Journal & Other (disabled) -->
-      <div class="glass rounded-3xl p-12 tilt-card opacity-50">
-        <div class="text-8xl mb-8">📝</div>
-        <h3 class="text-4xl font-bold mb-4">Journal Publications</h3>
-        <span class="inline-block px-6 py-3 bg-gray-500/20 text-gray-400 rounded-full">Coming Soon</span>
+      <!-- Journal Publications -->
+      <div class="glass-card work-card disabled">
+        <div class="work-icon">📝</div>
+        <h3>Journal Publications</h3>
+        <p>Peer-reviewed research papers</p>
+        <p style="margin-bottom: 1.5rem;">1 paper published</p>
+        <span class="work-badge gray">More Coming Soon</span>
       </div>
-      <div class="glass rounded-3xl p-12 tilt-card opacity-50">
-        <div class="text-8xl mb-8">🎓</div>
-        <h3 class="text-4xl font-bold mb-4">Other Publications</h3>
-        <span class="inline-block px-6 py-3 bg-gray-500/20 text-gray-400 rounded-full">Coming Soon</span>
+
+      <!-- Other Publications -->
+      <div class="glass-card work-card disabled">
+        <div class="work-icon">🎓</div>
+        <h3>Other Publications</h3>
+        <p>Conference papers & preprints</p>
+        <p style="margin-bottom: 1.5rem;">Building our portfolio</p>
+        <span class="work-badge gray">Coming Soon</span>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <script src="assets/js/main.js"></script>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>&copy; 2025 AIxSpace Research Cohort. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
