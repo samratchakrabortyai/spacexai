@@ -50,3 +50,72 @@ nav a:hover{color:#f093fb}
 .reveal.active{opacity:1;transform:translateY(0)}
 
 .nebula{position:absolute;width:1200px;height:1200px;background:radial-gradient(circle,#764ba2 0%,transparent 70%);filter:blur(160px);opacity:0.3;top:50%;left:50%;transform:translate(-50%,-50%)}
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+  margin-top: 80px;
+}
+.work-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+.work-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 80px rgba(118, 75, 162, 0.6);
+}
+.work-topbar {
+  height: 8px;
+  background: var(--grad);
+}
+.work-content {
+  padding: 40px;
+}
+.work-badge {
+  background: var(--grad);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.work-card h3 {
+  font-size: 1.8rem;
+  margin: 20px 0 12px;
+  line-height: 1.2;
+}
+.join-arrow {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f093fb;
+  display: inline-block;
+}
+
+/* PROJECT PAGE */
+.project-hero {
+  padding: 200px 0 100px;
+  text-align: center;
+}
+.project-tag {
+  background: rgba(240,147,251,0.2);
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  border: 1px solid #f093fb;
+}
+.authors {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+.join-form input, .join-form button {
+  margin: 16px 0;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+}
