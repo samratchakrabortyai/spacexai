@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLOC 2026 Abstracts - SpacexAI</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Same nav, hero -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <div class="text-8xl mb-8">🌍</div>
+    <h1 class="text-6xl md:text-8xl font-bold gradient-text mb-8">GLOC 2026</h1>
+    <p class="text-2xl text-gray-300">Global Space Conference on Climate Change</p>
+    <p class="text-xl mt-4">SpacexAI Research Cohort Submissions</p>
+  </section>
+
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="grid grid-cols-3 gap-8 text-center mb-20">
+      <div data-aos="fade-up"><h3 class="text-5xl font-bold gradient-text count" data-target="11">0</h3><p>Abstracts</p></div>
+      <div data-aos="fade-up" data-aos-delay="100"><h3 class="text-5xl font-bold gradient-text count" data-target="8">0</h3><p>Authors +</p></div>
+      <div data-aos="fade-up" data-aos-delay="200"><h3 class="text-5xl font-bold gradient-text count" data-target="3">0</h3><p>Tracks Covered</p></div>
+    </div>
+
+    <div class="space-y-12">
+      <!-- 11 Expandable Abstract Cards with full lorem ipsum, authors, tags, copy button -->
+      <div class="abstract-card glass rounded-3xl overflow-hidden">
+        <div class="p-8 cursor-pointer toggle flex justify-between items-center border-l-8 border-green-500">
+          <div>
+            <h3 class="text-2xl font-bold">AI-Driven Climate Monitoring from CubeSat Constellations</h3>
+            <p class="text-gray-400">Track: Earth Observation • Tags: AI, Climate, CubeSat</p>
+          </div>
+          <span class="text-3xl">▼</span>
+        </div>
+        <div class="content p-8 bg-white/5">
+          <p>Lorem ipsum dolor sit amet... (150 words placeholder)</p>
+          <p class="mt-6"><strong>Authors:</strong> Samrat Chakraborty, Alex Chen, Maria Garcia...</p>
+          <button class="mt-4 px-6 py-2 bg-green-500/20 text-green-400 rounded-full hover:bg-green-500/40 transition">Copy Text</button>
+        </div>
+      </div>
+      <!-- Repeat 10 more -->
+    </div>
+  </section>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
