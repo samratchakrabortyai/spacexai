@@ -1,52 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLOC 2026 · AIxSpace</title>
+  <title>GLOC 2026 - AIxSpace Research Cohort</title>
+  <meta name="description" content="AI-Driven Climate-Resilient Space Infrastructure - GLOC 2026">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<div class="cursor"></div>
+
+<!-- Background Effects -->
 <div class="stars"></div>
+<div class="nebula"></div>
 
-<header class="header">...</header>
+<!-- Navigation -->
+<header class="header">
+  <div class="container nav">
+    <a href="../index.html" class="logo">AIxSpace 🚀</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../team.html">Team</a>
+      <a href="../work.html">Our Work</a>
+      <a href="../join.html">Join Cohort</a>
+    </nav>
+  </div>
+</header>
 
+<!-- Project Hero -->
 <section class="project-hero">
   <div class="container">
-    <span class="project-tag">GLOC 2026 · Accepted</span>
-    <h1 class="mega-title gradient-text" style="font-size:5rem;margin:40px 0">
+    <span class="project-tag">🌍 GLOC 2026 · 11 Abstracts Accepted</span>
+    <h1 class="mega-title gradient-text" style="margin: 2rem 0;">
       AI-Driven Climate-Resilient<br>Space Infrastructure
     </h1>
-    <p class="authors">Samrat Chakraborty¹² & AIxSpace Research Cohort (55+ members)</p>
+    <p class="authors">Samrat Chakraborty & AIxSpace Research Cohort (55+ members)</p>
   </div>
 </section>
 
+<!-- Abstract Section -->
 <section class="section">
-  <div class="container" style="max-width:1000px">
-    <div class="glass-card reveal" style="padding:60px;border-radius:32px">
-      <h2 style="font-size:2.4rem;margin-bottom:30px;text-align:center">Abstract</h2>
-      <p style="font-size:1.35rem;line-height:2;opacity:0.95;text-align:center">
-        [Full abstract will be here — updates incoming, wait just a little more -Samrat]
+  <div class="container" style="max-width: 900px;">
+    <div class="glass-card" style="padding: 3rem;">
+      <h2 class="gradient-text text-center" style="font-size: 2rem; margin-bottom: 2rem;">Abstract</h2>
+      <p style="font-size: 1.2rem; line-height: 1.9; color: var(--text-muted); text-align: center;">
+        [Full abstract will be published here — updates incoming, wait just a little more -Samrat]
       </p>
 
-      <div style="margin:100px 0 60px;text-align:center">
-        <div class="gradient-underline" style="width:200px;margin:0 auto 30px"></div>
-        <p style="font-size:1.4rem;opacity:0.9">Project Code: <strong style="color:#f093fb;font-size:1.8rem">GLOC26-CLIMATE</strong></p>
+      <div style="margin: 4rem 0 3rem; text-align: center;">
+        <div class="gradient-underline" style="width: 150px; margin: 0 auto 1.5rem;"></div>
+        <p style="font-size: 1.2rem; color: var(--text-muted);">
+          Project Code: <strong class="gradient-text" style="font-size: 1.5rem;">GLOC26-CLIMATE</strong>
+        </p>
       </div>
 
-      <form action="https://formspree.io/f/mgejwpkd" method="POST" class="join-form reveal">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="discord" placeholder="Discord Username">
-        <input type="hidden" name="project" value="GLOC 2026">
-        <input type="hidden" name="code" value="GLOC26-CLIMATE">
-        <button type="submit" class="btn primary full" style="padding:24px;font-size:1.5rem">
-          APPLY TO GLOC 2026
-        </button>
-      </form>
+      <!-- Join Form -->
+      <div style="margin-top: 3rem;">
+        <h3 class="text-center" style="margin-bottom: 1.5rem;">Want to contribute to this project?</h3>
+        <form action="https://formspree.io/f/mgejwpkd" method="POST" class="join-form">
+          <input type="text" name="name" placeholder="Full Name *" required>
+          <input type="email" name="email" placeholder="Email *" required>
+          <input type="text" name="discord" placeholder="Discord Username (optional)">
+          <input type="hidden" name="project" value="GLOC 2026">
+          <input type="hidden" name="code" value="GLOC26-CLIMATE">
+          <button type="submit" class="btn primary full" style="padding: 1.2rem; font-size: 1.1rem;">
+            🌍 Apply to GLOC 2026 Project
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Back Link -->
+    <div class="text-center" style="margin-top: 3rem;">
+      <a href="../work.html" class="btn secondary">← Back to All Work</a>
     </div>
   </div>
 </section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>&copy; 2025 AIxSpace Research Cohort. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
