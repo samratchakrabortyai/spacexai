@@ -3,56 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join SpacexAI Research Cohort</title>
+  <title>Join - AIxSpace Research Cohort</title>
+  <meta name="description" content="Join 55+ researchers shaping the future of space AI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Hero -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-    <h1 class="text-6xl md:text-8xl font-bold gradient-text mb-8" data-aos="fade-up">Join SpacexAI Research Cohort</h1>
-    <p class="text-2xl md:text-4xl text-gray-300" data-aos="fade-up" data-aos-delay="300">Be part of 55+ researchers shaping the future of space AI</p>
-  </section>
 
-  <section class="py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-    <!-- Why Join -->
-    <div class="glass rounded-3xl p-12" data-aos="fade-left">
-      <h2 class="text-4xl font-bold gradient-text mb-12">Why Join Us?</h2>
-      <ul class="space-y-8 text-xl">
-        <li class="flex items-center gap-6"><span class="text-4xl">✅</span> International Collaboration</li>
-        <li class="flex items-center gap-6"><span class="text-4xl">✅</span> Research Publications</li>
-        <li class="flex items-center gap-6"><span class="text-4xl">✅</span> Conference Presentations</li>
-        <li class="flex items-center gap-6"><span class="text-4xl">✅</span> Real-world CubeSat Integration</li>
-        <li class="flex items-center gap-6"><span class="text-4xl">✅</span> Mentorship from Experts</li>
-        <li class="flex items-center gap-6"><span class="text-4xl">✅</span> SGAC-UNOOSA Recognition</li>
-      </ul>
+<!-- Background Effects -->
+<div class="stars"></div>
+<div class="nebula"></div>
+
+<!-- Navigation -->
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">AIxSpace 🚀</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="work.html">Our Work</a>
+      <a href="join.html">Join Cohort</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" style="min-height: 50vh;">
+  <div class="hero-content">
+    <h1 class="mega-title gradient-text">Join Our Cohort</h1>
+    <div class="gradient-underline"></div>
+    <p class="tagline">Be part of 55+ researchers shaping the future of space AI</p>
+  </div>
+</section>
+
+<!-- Join Section -->
+<section class="section">
+  <div class="container">
+    <div class="two-col-layout">
+      
+      <!-- Why Join -->
+      <div class="glass-card">
+        <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Why Join Us?</h2>
+        <ul class="why-join-list">
+          <li><span class="icon">🌍</span> International Collaboration</li>
+          <li><span class="icon">📄</span> Research Publications</li>
+          <li><span class="icon">🎤</span> Conference Presentations</li>
+          <li><span class="icon">🛰️</span> Real-world CubeSat Integration</li>
+          <li><span class="icon">👨‍🏫</span> Mentorship from Experts</li>
+          <li><span class="icon">🏛️</span> SGAC-UNOOSA Recognition</li>
+        </ul>
+      </div>
+
+      <!-- Application Form -->
+      <div class="glass-card">
+        <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Apply Now</h2>
+        <form action="https://formspree.io/f/mgejwpkd" method="POST" class="join-form">
+          <input type="text" name="name" placeholder="Full Name *" required>
+          <input type="email" name="email" placeholder="Email *" required>
+          <input type="text" name="country" placeholder="Country *" required>
+          <select name="track" required>
+            <option value="">Select Research Track *</option>
+            <option value="track1">Track 1: AI/ML Development</option>
+            <option value="track2">Track 2: Space Systems</option>
+            <option value="track3">Track 3: Data Analytics</option>
+            <option value="track4">Track 4: Ethics & Policy</option>
+            <option value="track5">Track 5: Integration & Testing</option>
+          </select>
+          <input type="url" name="linkedin" placeholder="LinkedIn URL (optional)">
+          <input type="text" name="discord" placeholder="Discord Username (optional)">
+          <textarea name="motivation" rows="4" placeholder="Why do you want to join? (optional)"></textarea>
+          <button type="submit" class="btn primary full" style="padding: 1.2rem; font-size: 1.1rem;">
+            🚀 Launch Application
+          </button>
+        </form>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <!-- Application Form -->
-    <div class="glass rounded-3xl p-12" data-aos="fade-right">
-      <h2 class="text-4xl font-bold gradient-text mb-12">Apply Now</h2>
-      <form id="join-form" class="space-y-8">
-        <input type="text" name="name" placeholder="Full Name *" required class="w-full px-6 py-4 rounded-xl glass border border-white/10 focus:border-purple-500 transition">
-        <input type="email" name="email" placeholder="Email *" required class="w-full px-6 py-4 rounded-xl glass border border-white/10">
-        <input type="text" name="country" placeholder="Country *" required class="w-full px-6 py-4 rounded-xl glass border border-white/10">
-        <select name="track" required class="w-full px-6 py-4 rounded-xl glass border border-white/10">
-          <option value="">Select Track *</option>
-          <option>Track 1: AI/ML Development</option>
-          <option>Track 2: Space Systems</option>
-          <option>Track 3: Data Analytics</option>
-          <option>Track 4: Ethics & Policy</option>
-          <option>Track 5: Integration & Testing</option>
-        </select>
-        <input type="url" name="linkedin" placeholder="LinkedIn URL (optional)" class="w-full px-6 py-4 rounded-xl glass border border-white/10">
-        <textarea name="motivation" rows="5" placeholder="Why do you want to join? (optional)" class="w-full px-6 py-4 rounded-xl glass border border-white/10"></textarea>
-        <button type="submit" class="w-full btn-primary py-6 text-xl font-bold relative overflow-hidden">
-          Launch Application 🚀
-          <span class="absolute inset-0 bg-white/20 animate-ping"></span>
-        </button>
-      </form>
-    </div>
-  </section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>&copy; 2025 AIxSpace Research Cohort. All rights reserved.</p>
+  </div>
+</footer>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/form.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
